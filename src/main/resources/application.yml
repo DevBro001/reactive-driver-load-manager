@@ -1,0 +1,25 @@
+spring:
+  application:
+    name: driver-load
+  r2dbc:
+    url: r2dbc:postgresql://localhost:5432/postgres
+    username: postgres
+    password: root
+  flyway:
+    url: jdbc:postgresql://localhost:5432/postgres
+    user: postgres
+    password: root
+
+logging:
+  level:
+    io.r2dbc.postgresql.QUERY: DEBUG
+
+jwt:
+  secret:
+    key: 34e7f550e2715c958372db43db8f68c0ea686807bf7eab4f22f2ee673df0f929
+
+springdoc:
+  api-docs:
+    path: /api-docs
+  swagger-ui:
+    path: /swagger-ui.html
