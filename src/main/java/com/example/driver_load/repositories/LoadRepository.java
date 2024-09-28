@@ -16,7 +16,7 @@ public interface LoadRepository extends ReactiveCrudRepository<Load,Long> {
     @Query("""
             SELECT l.id , l.load_number as loadNumber, l.pick_up_address as pickUpAddress, 
                         l.delivery_address as deliveryAddress, l.status as status, d.name as driverName, d.surname as driverSurname, 
-                        d.email as driverEmail, d.phone as driverPhone 
+                        d.email as driverEmail, d.phone as driverPhone ,d.id as driverId
                         FROM loads l
                         JOIN drivers d ON l.driver_id = d.id
                         """)

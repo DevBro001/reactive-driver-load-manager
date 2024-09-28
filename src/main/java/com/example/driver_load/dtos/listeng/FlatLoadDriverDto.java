@@ -18,6 +18,8 @@ public class FlatLoadDriverDto {
     private String deliveryAddress;
     @Column("status")
     private LoadStatus status;
+    @Column("driverId")
+    private Long driverId;
     @Column("driverName")
     private String driverName;
     @Column("driverSurname")

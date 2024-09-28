@@ -79,6 +79,7 @@ public class LoadService {
                         .pickUpAddress(flatDto.getPickUpAddress())
                         .deliveryAddress(flatDto.getDeliveryAddress())
                         .status(flatDto.getStatus())
+                        .driverId(flatDto.getDriverId())
                         .driverName(flatDto.getDriverName())
                         .driverSurname(flatDto.getDriverSurname())
                         .driverEmail(flatDto.getDriverEmail())
